@@ -1,0 +1,16 @@
+<h1>Name the Cities Where TTS Has a Campus</h1>
+
+	<div>
+		<%= @message %>
+	</div>
+	<br>
+
+<%= render 'form' %>
+
+<div>
+	<% @cities.each do |city| %>
+		<%= "#{city.id}. #{city.name}" %><br>
+	<% end %>
+</div>
+
+<%= link_to 'Back', cities_path %>
